@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sistema de Biblioteca</h1>
+
+    <!-- Formulário para cadastrar livros -->
+    <h2>Cadastrar Livro</h2>
+    <form id="formLivro">
+        <label for="titulo">Título do Livro:</label>
+        <input type="text" id="titulo" required>
+        <label for="autor">Autor do Livro:</label>
+        <input type="text" id="autor" required>
+        <button type="submit">Cadastrar Livro</button>
+    </form>
+
+    <!-- Formulário para cadastrar autores -->
+    <h2>Cadastrar Autor</h2>
+    <form id="formAutor">
+        <label for="nomeAutor">Nome do Autor:</label>
+        <input type="text" id="nomeAutor" required>
+        <button type="submit">Cadastrar Autor</button>
+    </form>
+
+    <!-- Formulário para cadastrar usuários -->
+    <h2>Cadastrar Usuário</h2>
+    <form id="formUsuario">
+        <label for="nomeUsuario">Nome do Usuário:</label>
+        <input type="text" id="nomeUsuario" required>
+        <button type="submit">Cadastrar Usuário</button>
+    </form>
+
+    <!-- Formulário para realizar empréstimo -->
+    <h2>Realizar Empréstimo</h2>
+    <form id="formEmprestimo">
+        <label for="tituloEmprestimo">Título do Livro:</label>
+        <input type="text" id="tituloEmprestimo" required>
+        <label for="nomeEmprestimo">Nome do Usuário:</label>
+        <input type="text" id="nomeEmprestimo" required>
+        <button type="submit">Realizar Empréstimo</button>
+    </form>
+
+    <!-- Formulário para realizar devolução -->
+    <h2>Realizar Devolução</h2>
+    <form id="formDevolucao">
+        <label for="tituloDevolucao">Título do Livro:</label>
+        <input type="text" id="tituloDevolucao" required>
+        <button type="submit">Realizar Devolução</button>
+    </form>
+
+    <!-- Consultar Livros Disponíveis -->
+    <h2>Consultar Livros Disponíveis</h2>
+    <button id="consultarLivrosDisponiveis">Consultar</button>
+    <ul id="listaLivrosDisponiveis"></ul>
+
+    <!-- Consultar Livros Emprestados -->
+    <h2>Consultar Livros Emprestados</h2>
+    <button id="consultarLivrosEmprestados">Consultar</button>
+    <ul id="listaLivrosEmprestados"></ul>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
